@@ -8,6 +8,10 @@ This code randomly generates simple data within the specified range and sends it
 
 Example usage:
 ```bash
-python .\simulated-env-sensor.py --topic='my-topic' --sensor-id='sensor-12345' --min-value=10.0 --max-value=30.0 --sensor-type='temperature' --unit='C'`
+python .\simulated_env_sensor.py --topic='my-topic' --sensor-id='sensor-42' --min-value=10.0 --max-value=30.0 --sensor-type='temperature' --unit='C'
 ```
 
+To run mutliple sensors at once:
+```bash
+python run_multiple_sim_sensors.py --num-sensors=5 --topic='my-topic' --base-min-value=15.0 --base-max-value=25.0 --sensor-type='temperature' --unit='C'
+```
