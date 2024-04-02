@@ -11,7 +11,7 @@ parser.add_argument('--sensor-type', type=str, default='temperature', help='Type
 parser.add_argument('--unit', type=str, default='C', help='Reading Unit')
 parser.add_argument('--base-min-value', type=float, default=10.0, help='Base minimum reading for data generation')
 parser.add_argument('--base-max-value', type=float, default=30.0, help='Base maximum reading for data generation')
-parser.add_argument('--url', type=str, default='http://localhost:8080/topics/', help='URL of the Kafka Bridge')
+parser.add_argument('--url', type=str, default='http://sitevisor.local:8080/topics/', help='URL of the Kafka Bridge')
 
 args = parser.parse_args()
 

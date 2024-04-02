@@ -50,7 +50,7 @@ def main():
     args = parser.parse_args()
 
     # URL of the Kafka Bridge
-    url = f'http://localhost:8080/topics/{args.topic}'
+    url = f'http://sitevisor.local:8080/topics/{args.topic}'
 
     # Headers for the POST request
     headers = {
